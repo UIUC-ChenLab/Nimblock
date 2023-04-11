@@ -1,7 +1,7 @@
 # Nimblock
 Scheduling for Fine-grained FPGA Sharing through Virtualization
 
-[![DOI](https://zenodo.org/badge/616604305.svg)](https://zenodo.org/badge/latestdoi/616604305)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7818841.svg)](https://doi.org/10.5281/zenodo.7818841)
 
 Nimblock employs an overlay architecture which enables arbitrary, independent user logic to share portions of a single FPGA by dividing the FPGA into independently reconfigurable slots. We then explore scheduling possibilities to effectively time- and space-multiplex the virtualized FPGA by introducing Nimblock. The Nimblock scheduling algorithm balances application priorities and performance degradation to improve response time and reduce deadline violations. Unlike other algorithms, Nimblock explores preemption as a scheduling parameter to dynamically change resource allocations, and automatically allocates resources to enable suitable parallelism for an application without additional user input. We demonstrate system feasibility by realizing the complete system on a Xilinx ZCU106 FPGA and evaluating on a set of real-world benchmarks. In our results, we achieve lower average response times, fewer deadline violations, and lower tail response times when compared to other high-performance scheduling algorithms.
 
