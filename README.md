@@ -36,8 +36,8 @@ For more details, please see our ISCA'23 paper:
 4. The workspace should load. Right click to build applications if they do not automatically build. If there are build errors in the nimblock_zcu_sw application, right click to "Change referenced BSP" to nimblock_zcu_sw_bsp.
 5. Load the partial bitstreams in Nimblock/multi_app_ten_slots/bitstreams_bin/ onto the ZCU106 SD card.
 6. Open a serial console, such as putty, with the port corresponding to the FPGA and baud rate 115200.
-7. Program the FPGA with the initial full bitstream: multi_app_ten_slots/bitstreams/Config_0.bit
-8. Due to an [error](https://support.xilinx.com/s/article/72210?language=en_US) in ZCU102/106 boards, the zynq_FSBL application must first be run on the board. After turning on the board/resetting the board, run the zynq_FSBL application. (Right click --> Run As --> Launch on Hardware (System Debugger)). This should print output from the First Stage Boot Loaded. 
+7. Turn on the board/reset the board. Program the FPGA with the initial full bitstream: multi_app_ten_slots/bitstreams/Config_0.bit
+8. Due to an [error](https://support.xilinx.com/s/article/72210?language=en_US) in ZCU102/106 boards, the zynq_FSBL application must first be run on the board. After turning on the board/resetting the board and programming the board, run the zynq_FSBL application. (Right click --> Run As --> Launch on Hardware (System Debugger)). This should print output from the First Stage Boot Loaded. 
 9. Run nimblock_zcu_sw (Right click --> Run As --> Launch on Hardware (System Debugger)). If the program is running, you should see something like
 
 ```
